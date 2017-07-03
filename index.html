@@ -1,0 +1,115 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <meta name="description" content="Online Podcast Player">
+    <meta name="author" content="Khidrix">
+    <link rel="icon" href="icon/podboy.ico">
+
+    <title>PodBoy</title>
+
+    <!-- Bootstrap core CSS -->
+    <!--link href="../../dist/css/bootstrap.min.css" rel="stylesheet"-->    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="">
+	    <img class="hidden-xs" id="podboy-logo" src="icon/podboy90-4.png"/>
+	    <img class="hidden-sm hidden-md hidden-lg" id="podboy-logo" src="icon/podboy42-4.png"/>
+	  </a>
+	  <a class="navbar-brand" id="podboy-title" href="">PodBoy</a>
+
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#explore">Explore</a></li>
+            <li><a href="#subscripptions">Subscriptions</a></li>
+          </ul>
+	  <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#profile">Username</a>
+	      <ul class="dropdown-menu dropdown-dark">
+		<li><a href="#">Action</a></li>
+		<li><a href="#">Another action</a></li>
+		<li><a href="#">Something else here</a></li>
+		<li role="separator" class="divider"></li>
+		<li><a href="#">Separated link</a></li>
+		<li role="separator" class="divider"></li>
+		<li><a href="#">One more separated link</a></li>
+              </ul>
+	    </li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+
+
+
+
+    <div id="work-area">
+      
+
+      <div class="container" id="episode-list"></div>
+
+    </div>
+    
+
+    <audio id="player"></audio>
+    <div id="player-pane">
+      <div id="progress-bar">
+	<div id="progress"></div>
+      </div>
+      <div id="times">
+	<span id="time-current">00:00</span>
+	<span id="time-total">01:32</span>
+      </div>
+
+
+      <div id="controls">
+
+	  <span id="step-backward" class="control-button glyphicon glyphicon-repeat"></span>
+	  <span id="previous" class="control-button glyphicon glyphicon-step-backward"></span>
+	  <span id="play-pause" class="control-button glyphicon glyphicon-play"></span>
+	  <span id="next" class="control-button glyphicon glyphicon-step-forward"></span>
+	  <span id="step-forward" class="control-button glyphicon glyphicon-repeat"></span>
+      </div>
+    </div>
+
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!--script src="../../dist/js/bootstrap.min.js"></script-->
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
