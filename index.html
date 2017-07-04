@@ -77,21 +77,30 @@
     <audio id="player"></audio>
     <div id="player-pane">
       <div id="progress-bar">
+	<div id="buffer"></div>
 	<div id="progress"></div>
       </div>
       <div id="times">
-	<span id="time-current">00:00</span>
-	<span id="time-total">01:32</span>
+	<span id="time-current">--:--</span>
+	<span id="time-total">--:--</span>
       </div>
 
 
       <div id="controls">
-
 	  <span id="step-backward" class="control-button glyphicon glyphicon-repeat"></span>
 	  <span id="previous" class="control-button glyphicon glyphicon-step-backward"></span>
 	  <span id="play-pause" class="control-button glyphicon glyphicon-play"></span>
 	  <span id="next" class="control-button glyphicon glyphicon-step-forward"></span>
 	  <span id="step-forward" class="control-button glyphicon glyphicon-repeat"></span>
+      </div>
+
+      <div id="volume-container">
+	<span id="volume" class="control-button glyphicon glyphicon-volume-up"></span>
+	<div id="volume-slider">
+	  <div id="current-volume"><div id="volume-knob"></div></div>	  
+	</div>
+
+	
       </div>
     </div>
 
