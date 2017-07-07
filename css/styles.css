@@ -20,6 +20,13 @@ html, body {
 .dropdown-menu>li>a {
     color: #9d9d9d;
 }
+.dropdown-menu>li>a:hover {
+    background-color: #222;
+    color: #fff;
+}
+.dropdown-menu .divider {
+    background-color: #585858;
+}
 
 #list-area button:focus, #list-area button:active {
    outline: none !important;
@@ -208,51 +215,3 @@ html, body {
     border-radius: 20px;
     background-color: #fff;
 }
-
-
-/*
-
-html, body {
-    height: 100%;
-}
-body {
-    padding-top: 70px;
-    padding-bottom: 80px;
-}
-#work-area {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    margin: 0px 0px;
-    height: 100%;
-    overflow-y: auto;
-}
-
-//*smaller screens
-@media (max-Width: 767px) {
-    body {
-	padding-top: 50px;
-	padding-bottom: 80px;
-    }
-    #work-area {
-	padding: 0px;
-    }
-}
-
-
-#work-area::-webkit-scrollbar {
-    width: 0.8em;
-}
- 
-#work-area::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-
-}
- 
-#work-area::-webkit-scrollbar-thumb {
-    margin: 10px;
-    border-radius: 10px;
-  background-color: #9d9d9d;
-  outline: 1px solid #44474c;
-}
-
-*/
